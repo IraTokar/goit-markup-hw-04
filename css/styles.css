@@ -131,6 +131,7 @@ img {
 .header-contacts-list {
     display: flex;
     margin-left: auto;
+    
 }
 
 .contact-link {
@@ -142,6 +143,9 @@ img {
 
     padding-top: 32px;
     padding-bottom: 32px;
+
+    display: flex;
+    align-items: center;
 
 }
 
@@ -176,7 +180,7 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/hero/hero.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 1600px;
+    max-width: 1600px;
 
     text-align: center;
     padding-top: 200px;
@@ -421,6 +425,7 @@ img {
 .clients-list {
     display: flex;
     align-items: center;
+
 }
 
 .clients-list {
@@ -428,6 +433,12 @@ img {
 }
 
 .clients-item {
+    display: flex;
+   
+  
+}
+
+.clients-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -437,11 +448,10 @@ img {
 
     border-radius: 4px;
     border: 1px solid #AFB1B8;
-
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
     border-color: var(--accent-color);
 }
 
@@ -571,10 +581,6 @@ img {
     margin-right: 0;
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-}
 
 .button {
     background-color: var(--background-color-light); 
@@ -596,11 +602,13 @@ img {
 .button:focus {
     background-color: var(--accent-color);
     color: var(--secondary-text-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .active-button {
     background-color: var(--accent-color);
     color: var(--secondary-text-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 /* Projects styles */
@@ -647,8 +655,12 @@ img {
 
 }
 
-.project-item:hover,
-.project-item:focus {
+.project-link {
+    display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
